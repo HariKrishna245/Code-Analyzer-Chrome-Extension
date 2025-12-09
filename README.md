@@ -1,138 +1,192 @@
-# code-Analyzer Chrome Extension
+# 🚀 CodeScope – Chrome Code Analyzer Extension
 
-## Overview
+<p align="center">
+  <img src="https://raw.githubusercontent.com/placeholder/codescope-banner.png" alt="CodeScope Banner" width="100%">
+</p>
 
-The **(Code-Analyzer) Chrome Extension** is designed to help developers optimize their algorithms by providing instant insights into time and space complexity. Whether you are browsing coding platforms, reviewing code snippets, or working on your own projects, this extension simplifies complexity analysis, allowing you to write more efficient and optimized code.
-
-With its seamless integration into the browser, Code-Analyzer empowers developers, students, and coding enthusiasts to analyze their code on the go without needing external tools. The extension leverages **Gemini AI** to predict and provide detailed complexity analysis, making it a powerful assistant for algorithmic efficiency.
-
----
-
-## Features
-
-### 🔹 **Time Complexity Analysis**
-- Automatically detects and evaluates the time complexity of algorithms.
-- Displays results in **Big-O notation**.
-- Helps identify potential performance bottlenecks in your code.
-
-### 🔹 **Space Complexity Analysis**
-- Estimates the memory usage of your code.
-- Provides insights into how efficiently data structures are used.
-
-### 🔹 **Real-Time Analysis**
-- Works directly in the Chrome browser, making it easy to analyze code while browsing online.
-- Supports integration with popular coding platforms like **LeetCode, Codeforces, GeeksforGeeks, and GitHub**.
-
-### 🔹 **AI-Powered Optimization**
-- Uses **Gemini AI** to provide more accurate predictions and suggestions for improving algorithmic efficiency.
-- Highlights alternative approaches to optimize your code.
-
-### 🔹 **User-Friendly Interface**
-- Clean and intuitive design.
-- Quick installation and easy access directly from the browser toolbar.
-
-### 🔹 **Secure Authentication & Cloud Storage**
-- Utilizes **Firebase Authentication** for secure sign-in.
-- Saves analysis history in a **Firebase database** for future reference.
+> 📝 *Replace the banner URL above with your own image — I’ll generate one if you want!*
 
 ---
 
-## Tech Stack
-
-- **Frontend:** TypeScript, Tailwind CSS, and other CSS libraries
-- **Backend:** NodeJs , ExpressJs
-- **Authentication & Database:** Firebase + Mongo db
-- **AI Integration:** Gemini AI
-- **Build Tool:** Parcel for efficient bundling
-- **Browser Compatibility:** Optimized for Chrome
+![Chrome](https://img.shields.io/badge/Chrome-Extension-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
+![Webpack](https://img.shields.io/badge/Bundled%20With-Webpack-8DD6F9?logo=webpack&logoColor=white)
+![Status](https://img.shields.io/badge/Build-Stable-brightgreen)
+![Platform](https://img.shields.io/badge/Platform-Web-lightgrey)
 
 ---
 
-## Why Use Code-Analyzer?
+## 🎥 Demo Preview
 
-✅ **Boost Coding Productivity:** Get real-time complexity analysis while coding.
-✅ **Improve Algorithm Efficiency:** Identify bottlenecks and optimize your code with AI-driven suggestions.
-✅ **Perfect for Competitive Programmers & Developers:** Analyze problems and solutions instantly without manual calculations.
-✅ **Seamless Integration:** Works effortlessly on online coding platforms and GitHub repositories.
-✅ **Easy to Use:** One-click access to analyze code on any website.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/placeholder/codescope-demo.gif" width="65%" alt="Demo GIF">
+</p>
 
----
-
-## Installation & Usage
-
-### Step 1: Clone the Repository
-```
-git clone https://github.com/sagarchaurasia176/Analyzer-chrome-extension
-cd Analyzer-chrome-extension
-```
-
-### Step 2: Install Dependencies
-```
-pnpm install
-```
-
-### Step 3: Build the Extension using Parcel
-```
-pnpm build
-```
-
-
-### Step 3: To run Project Type,
-```
-pnpm start
-```
-
-
-### Step 3: Make Sure to Create .parcelrc (copy and paste in your file)
-```
-{
-  "extends": "@parcel/config-webextension",
-  "transformers": {
-    "*.{js,mjs,jsx,cjs,ts,tsx}": [
-      "@parcel/transformer-js",
-      "@parcel/transformer-react-refresh-wrap"
-    ]
-  },
-  "namers": ["@parcel/namer-default"],
-  "packagers": {
-    "*.html": "@parcel/packager-html",
-    "*.js": "@parcel/packager-js",
-    "*.css": "@parcel/packager-css"
-  },
-  "optimizers": {
-    "*.js": ["@parcel/optimizer-terser"]
-  },
-  "reporters": ["...", "parcel-reporter-static-files-copy"]
-}
-```
-
-
-
-### Step 4: Load the Extension in Chrome
-1. Open **chrome://extensions/** in your Chrome browser.
-2. Enable **Developer mode** (toggle switch at the top right).
-3. Click **Load unpacked** and select the `dist` folder inside the cloned repository.
-4. The extension should now be available in your browser toolbar.
+> 📝 *Drop your demo recording as `demo.gif` into your repo, and replace the link above.*
 
 ---
 
-## Screenshots
+## 📌 Overview
 
-![Screenshot 2025-02-14 124310](https://github.com/user-attachments/assets/ada732a5-f273-4f89-be3c-f9e9e22ae5b0)
-![Screenshot 2025-02-18 005549](https://github.com/user-attachments/assets/db459fc4-0da7-45f2-8aa9-f8671c98df8b)
-![Screenshot 2025-02-16![Screenshot 2025-02-18 015532](https://github.com/user-attachments/assets/a417cb13-8a45-4517-b56d-6c98d5f7deca)
-![Screenshot 2025-02-18 015532](https://github.com/user-attachments/assets/19e8e3e9-667c-4d57-b7c4-6dd22eda670c)
-![Screenshot 2025-03-16 000705](https://github.com/user-attachments/assets/61e87a79-5749-4b9c-8a79-88792295d1ce)
-![Screenshot 2025-03-12 111713](https://github.com/user-attachments/assets/f31b5827-511a-479b-b2d9-3dc39e341262)
+**CodeScope** is a lightweight Chrome extension designed to help developers quickly understand and evaluate source code inside the browser.  
+It provides insights into:
 
+- 📊 Code **complexity**
+- 🧩 Code **structure**
+- ⚠️ Potential **problem areas**
+- 🔍 Nesting depth, branching, function shapes & more
 
 ---
 
+## ⭐ Key Features
 
-## Contribute
+### 🔍 1. Code Complexity & Hotspot Detection
+- Detects long, heavy blocks of code.
+- Identifies deep nesting & overly complex sections.
+- Helps spot refactoring candidates.
 
-We welcome contributions! If you have ideas for improvements or want to report bugs, feel free to check out the project repository and contribute to its development.
 ---
 
-With **Code-Analyzer**, optimizing algorithms has never been easier. Whether you're a beginner learning data structures or a seasoned developer working on performance-critical applications, this extension is the perfect tool to refine your code efficiently!
+### 🧩 2. Structure Analysis
+CodeScope evaluates the overall **shape** and **architecture** of your source code.
+
+✔ **Nesting Depth**  
+✔ **Branching patterns** (if/else chains, switches)  
+✔ **Function / Component size**  
+✔ **HTML/JS structure patterns**  
+✔ **Inline script detection**  
+
+---
+
+### ⚡ 3. Real-Time Browser Analysis
+- Works anywhere — webpages, editors, devtools.
+- Zero installation beyond adding the extension.
+
+---
+
+### 🎨 4. Modern UI (React + TypeScript)
+- Smooth, clean popup interface.
+- Intuitive layout with real-time updates.
+
+---
+
+## 🧰 Architecture Diagram (Mermaid.js)
+
+```mermaid
+flowchart TD
+
+A[User Opens Chrome Extension] --> B[Popup React UI]
+B --> C[Content Script]
+C --> D[Code Analysis Engine - utils/]
+D --> E[Nesting Detection]
+D --> F[Branch/Structure Analyzer]
+D --> G[Function Shape Analyzer]
+
+C --> H[Background Service Worker]
+
+subgraph Frontend (React + TS)
+B
+end
+
+subgraph Chrome MV3 Scripts
+C
+H
+end
+
+subgraph Analysis Engine
+E
+F
+G
+end
+```
+
+---
+
+## 📁 Tech Stack
+
+| Layer        | Technology              |
+|--------------|-------------------------|
+| Frontend     | React, TypeScript       |
+| Backend      | Node.js (utility modules) |
+| Bundler      | Webpack                 |
+| Platform     | Chrome Extension (MV3)  |
+
+---
+
+## 📂 Project Structure
+
+```
+CodeScope/
+├── Backend/
+│   ├── config/
+│   ├── controller/
+│   ├── routes/
+│   ├── schema/
+│   ├── utils/
+│   ├── Dockerfile
+│   ├── docker-compose.yaml
+│   ├── app.ts
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── src/
+│   ├── components/
+│   ├── context/
+│   ├── utils/
+│   ├── App.tsx
+│   ├── content.tsx
+│   ├── background.ts
+│   └── main.tsx
+│
+├── public/
+│   └── index.html
+│
+├── icons/
+│
+├── manifest.example.json
+├── webpack.config.js
+├── package.json
+├── pnpm-lock.yaml
+├── .gitignore
+├── .env.example
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone
+```bash
+git clone https://github.com/HariKrishna245/Code-Analyzer-Chrome-Extension.git
+cd Code-Analyzer-Chrome-Extension
+```
+
+### 2️⃣ Install
+```bash
+npm install
+```
+
+### 3️⃣ Build
+```bash
+npm run build
+```
+
+### 4️⃣ Load Into Chrome
+1. Visit `chrome://extensions`
+2. Enable **Developer Mode**
+3. Click **Load Unpacked**
+4. Select the build output folder
+
+---
+
+## 🧭 Roadmap
+
+- 🔘 Improved complexity estimation  
+- 🔘 FKGL readability score (planned)  
+- 🔘 Interactive charts for complexity  
+- 🔘 Inline webpage highlight mode  
+- 🔘 Full AST-based analysis  
+
 
