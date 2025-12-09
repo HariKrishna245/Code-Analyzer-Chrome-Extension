@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+
+# Parcel build and cache
+.parcel-cache/
+dist/
+.cache/
+.manifest.json
+.parcelrc
+
+#config file
+config.ts
+nginx.conf
+
+# Ignore config file in constant folder
+src/constant/config.ts
+
+# System Files
+.DS_Store
+Thumbs.db
+
+#manifest
+manifest.json
