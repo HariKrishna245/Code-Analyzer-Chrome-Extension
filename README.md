@@ -1,10 +1,8 @@
 # 🚀 CodeScope – Chrome Code Analyzer Extension
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/placeholder/codescope-banner.png" alt="CodeScope Banner" width="100%">
+  <img src="assets/codescope-banner.png" alt="CodeScope Banner" width="100%">
 </p>
-
-> 📝 *Replace the banner URL above with your own image — I’ll generate one if you want!*
 
 ---
 
@@ -20,10 +18,8 @@
 ## 🎥 Demo Preview
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/placeholder/codescope-demo.gif" width="65%" alt="Demo GIF">
+  <img src="<!-- add your demo.gif path here -->" width="65%" alt="Demo GIF">
 </p>
-
-> 📝 *Drop your demo recording as `demo.gif` into your repo, and replace the link above.*
 
 ---
 
@@ -52,7 +48,7 @@ It provides insights into:
 CodeScope evaluates the overall **shape** and **architecture** of your source code.
 
 ✔ **Nesting Depth**  
-✔ **Branching patterns** (if/else chains, switches)  
+✔ **Branching patterns**  
 ✔ **Function / Component size**  
 ✔ **HTML/JS structure patterns**  
 ✔ **Inline script detection**  
@@ -144,6 +140,9 @@ CodeScope/
 │
 ├── icons/
 │
+├── assets/
+│   └── codescope-banner.png
+│
 ├── manifest.example.json
 ├── webpack.config.js
 ├── package.json
@@ -188,5 +187,3 @@ npm run build
 - 🔘 Interactive charts for complexity  
 - 🔘 Inline webpage highlight mode  
 - 🔘 Full AST-based analysis  
-
-
