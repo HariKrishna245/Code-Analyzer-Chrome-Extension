@@ -11,7 +11,6 @@
 
 ---
 
-
 ## 📌 Overview
 
 **CodeScope** is a lightweight Chrome extension designed to help developers quickly understand and evaluate source code inside the browser.  
@@ -109,6 +108,13 @@ CodeScope/
 ├── .env.example
 └── README.md
 ```
+## 📸 Results
+
+### 🔹 AI Complexity Popup — Example 1
+![Result 1](assets/result1.png)
+
+### 🔹 AI Complexity Popup — Example 2
+![Result 2](assets/result2.png)
 
 ---
 
