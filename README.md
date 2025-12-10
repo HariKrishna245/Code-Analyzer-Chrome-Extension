@@ -1,8 +1,4 @@
-# 🚀 CodeScope – Chrome Code Analyzer Extension
-
-<p align="center">
-  <img src="assets/codescope-banner.png" alt="CodeScope Banner" width="100%">
-</p>
+# CodeScope – Chrome Code Analyzer Extension
 
 ---
 
@@ -65,37 +61,6 @@ CodeScope evaluates the overall **shape** and **architecture** of your source co
 - Smooth, clean popup interface.
 - Intuitive layout with real-time updates.
 
----
-
-## 🧰 Architecture Diagram (Mermaid.js)
-
-```mermaid
-flowchart TD
-
-A[User Opens Chrome Extension] --> B[Popup React UI]
-B --> C[Content Script]
-C --> D[Code Analysis Engine - utils/]
-D --> E[Nesting Detection]
-D --> F[Branch/Structure Analyzer]
-D --> G[Function Shape Analyzer]
-
-C --> H[Background Service Worker]
-
-subgraph Frontend (React + TS)
-B
-end
-
-subgraph Chrome MV3 Scripts
-C
-H
-end
-
-subgraph Analysis Engine
-E
-F
-G
-end
-```
 
 ---
 
