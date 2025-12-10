@@ -11,13 +11,6 @@
 
 ---
 
-## 🎥 Demo Preview
-
-<p align="center">
-  <img src="<!-- add your demo.gif path here -->" width="65%" alt="Demo GIF">
-</p>
-
----
 
 ## 📌 Overview
 
